@@ -12,50 +12,19 @@
   <body>
     <div class="wrapper">
       <header class="header container-fluid">
-        <div class="row">
-          <div class="col-xs-3">
-            <button class="menuButton" type="button"><img src="assets/img/menuButton.png" alt="menuButton">
-            </button>
-          </div>
-          <div class="logo col-xs-9 col-sm-3"><img src="assets/img/logo.png" alt="logo">
-          </div>
-          <div class="rightPart col-xs-12 col-sm-6">
-            <form class="search">
-              <input type="text">
-            </form>
-            <div id="searchButton"><img src="assets/img/search.png" alt="search">
-            </div><a class="login" href="">Войти</a>
-            <div class="cart"><img src="assets/img/cartTotal.png" alt="cart">
-            </div>
-          </div>
+        <button class="menuButton" type="button"><img src="assets/img/menuButton.png" alt="menuButton">
+        </button>
+        <div class="logo"><img src="assets/img/logo.png" alt="logo">
         </div>
+        <form class="search">
+          <input class="searchInput" type="text" placeholder="Поиск среди более 3300 товаров">
+        </form>
+        <div class="searchButton"><img src="assets/img/search.png" alt="search">
+        </div><a class="login" href="">Войти</a><a class="cartLink" href=""><img src="assets/img/cartTotal.png" alt="cart"><span>2</span></a>
       </header>
     </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/user.js"></script>
   </body>
 </html>
-<!--		.one-time-->
-<!--			.firstSlide-->
-<!--				+ image("Brushed.png", "brushed")-->
-<!--			.secondSlide-->
-<!--				img(src="assets/img/Brushed.png", alt="logo")-->
-<!--			.thirdSlide-->
-<!--				img(src="assets/img/Brushed.png", alt="logo")-->
-<!--		header.header-->
-<!--			.logo-->
-<!--				img(src="assets/img/logo.png", alt="logo")-->
-<!--			nav.navigation-->
-<!--				span.header__button-->
-<!--				ul.menu-->
-<!--					li-->
-<!--						a(href="") home-->
-<!--					li-->
-<!--						a(href="") our work-->
-<!--					li-->
-<!--						a(href="") about us-->
-<!--					li-->
-<!--						a(href="") contact
-script(src="js/jquery-3.2.1.min.js")
-script(src="js/bootstrap.min.js") 
-script(src="js/slick.min.js")
-script(src="js/user.js")
--->

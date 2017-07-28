@@ -8,45 +8,19 @@ html
 	body
 		.wrapper
 			header.header.container-fluid
-				.row
-					.col-xs-3
-						button(type="button").menuButton
-							+ image("menuButton.png", "menuButton")
-					.logo.col-xs-9.col-sm-3
-						+ image("logo.png", "logo")
-					.rightPart.col-xs-12.col-sm-6
-						form.search
-							input(type="text")
-						#searchButton
-							+ image("search.png", "search")
-						a.login(href="") Войти
-						.cart
-							+ image("cartTotal.png", "cart")
-	
-//		.one-time
-//			.firstSlide
-//				+ image("Brushed.png", "brushed")
-//			.secondSlide
-//				img(src="assets/img/Brushed.png", alt="logo")
-//			.thirdSlide
-//				img(src="assets/img/Brushed.png", alt="logo")
-//		header.header
-//			.logo
-//				img(src="assets/img/logo.png", alt="logo")
-//			nav.navigation
-//				span.header__button
-//				ul.menu
-//					li
-//						a(href="") home
-//					li
-//						a(href="") our work
-//					li
-//						a(href="") about us
-//					li
-//						a(href="") contact
-		
+				button(type="button").menuButton
+					+ image("menuButton.png", "menuButton")
+				.logo
+					+ image("logo.png", "logo")
+				form.search
+					input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
+				.searchButton
+					+ image("search.png", "search")
+				a(href="").login Войти
+				a.cartLink(href="")
+					+ image("cartTotal.png", "cart")
+					span 2
 		script(src="js/jquery-3.2.1.min.js")
-		script(src="js/bootstrap.min.js") 
 		script(src="js/slick.min.js")
 		script(src="js/user.js")
 

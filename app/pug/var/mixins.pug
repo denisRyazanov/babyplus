@@ -1,6 +1,7 @@
 //- image
-mixin image(name, alt = 'example')
+mixin image(name, alt = 'example', clas='')
   img(
     src=path.src.img + name
     alt=alt
+	class=clas
     )    

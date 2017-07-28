@@ -1,39 +1,119 @@
 .header {
+	padding: 20px 0;
 	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 	.logo {
-		padding-top: .5rem;
+		display: none;
+		float: left;
 	}
-	.rightPart {
-		padding-top: 25px;
+	.menuButton {
+		background: #fff;
+		border: none;
+		float: left;
+		padding: 1rem 0;
+		margin-right: 2rem;
+	}
+	.search {
+		input {
+			border: none;
+			border-bottom: 1px solid #00ada5;
+			margin-right: 1rem;
+			width: 250px;
+		}
+	}
+	.login {
+		color: #00ada5;
+		display: inline-block;
+		padding-top: 15px;
+		margin-left: calc(100vw/4);
+		margin-right: 0;
+		text-transform: uppercase;
+		font:bold 1.6rem RobotoRegular;
+	}
+	.cartLink {
+		text-decoration: none;
+		padding: 1rem .5rem;
+		border-radius: 50%;
+		background-color: #ff6f00;
+		color: #fff;
+		float: right;
+		img {
+			margin-right: .5rem;
+		}
+	}
+}
+
+.searchButton {
+	padding: 1rem 0;
+	display: block;
+	float: left;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+.header {	
+	.search {
+		position: absolute;
+		top: 10rem;
+		left: -250px;
+		z-index: 3;
+		transition: left 1s;
+	}
+	.active {
+		left: calc((100vw - 250px)/2);
+	}
+}
+}
+
+@media screen and (min-width:768px) {
+	.header{ 
+		.logo {
+			display: block;
+		}
 		.search {
+			margin: 30px 0 0 10px;
+			position: static;
 			float: left;
-			input {
-				border: none;
-				border-bottom: 1px solid #00ada5;
-				margin-right: 1rem;
-			}
+		}
+		.searchButton {
+			margin-top: 20px;
+			display: inline-block;
+			float: left;
 		}
 		.login {
-			float: right;
+			padding-top: 35px;
+			margin-left: 20px;
 		}
-		.cart {
-			width: 30px;
-			height: 30px;
+		.cartLink {
+			margin-top: 22px;
+		}
+		.menuButton {
+			padding: 2rem;
 		}
 	}
+	
 }
-#searchButton {
-	float: left;
-}
-.menuButton {
-	background: #fff;
-	border: none;
-	img {
-		padding: 25px 0;
+@media screen and (min-width:1024px) {
+	.header{
+		.search {
+			margin-left: calc(100vw - 90%);
+		}
+		.login {
+			margin-left: 150px;
+		}
+		
 	}
 }
-
-
+@media screen and (min-width:1200px) {
+	.header{
+		.search {
+			input {
+				width: 40%;
+			}
+	}
+}
 /* Slider ---------------------------------------------------------------
 --------------------------------------------------*/
 //.one-time {
