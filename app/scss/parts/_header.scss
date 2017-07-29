@@ -1,6 +1,25 @@
 .header {
-	padding: 20px 0;
+	padding-top: 20px;
 	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+	.headerTop{
+		padding-bottom: 2rem;
+	}
+	.headerBottom {
+		text-align: center;
+		background: #ababab;
+		color: #fff;
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			li {
+				list-style: none;
+				text-align: center;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
 	.logo {
 		display: none;
 		float: left;
@@ -10,7 +29,7 @@
 		border: none;
 		float: left;
 		padding: 1rem 0;
-		margin-right: 2rem;
+		margin: 0 2rem;
 	}
 	.search {
 		input {
@@ -32,6 +51,7 @@
 	.cartLink {
 		text-decoration: none;
 		padding: 1rem .5rem;
+		margin-right: 2rem;
 		border-radius: 50%;
 		background-color: #ff6f00;
 		color: #fff;
@@ -49,6 +69,9 @@
 	&:hover {
 		cursor: pointer;
 	}
+}
+.clear {
+	clear: both;
 }
 
 
@@ -110,8 +133,9 @@
 	.header{
 		.search {
 			input {
-				width: 40%;
+				width: 520px;
 			}
+		}
 	}
 }
 /* Slider ---------------------------------------------------------------

@@ -7,19 +7,40 @@ html
 	include includes/head.pug
 	body
 		.wrapper
-			header.header.container-fluid
-				button(type="button").menuButton
-					+ image("menuButton.png", "menuButton")
-				.logo
-					+ image("logo.png", "logo")
-				form.search
-					input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
-				.searchButton
-					+ image("search.png", "search")
-				a(href="").login Войти
-				a.cartLink(href="")
-					+ image("cartTotal.png", "cart")
-					span 2
+			header.header
+				.headerTop
+					button(type="button").menuButton
+						+ image("menuButton.png", "menuButton")
+					.logo
+						+ image("logo.png", "logo")
+					form.search
+						input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
+					.searchButton
+						+ image("search.png", "search")
+					a(href="").login Войти
+					a.cartLink(href="")
+						+ image("cartTotal.png", "cart")
+						span 2
+				.clear
+				.headerBottom
+					ul.menu
+						li
+							a(href="") О нас
+						li
+							a(href="") Доставка и оплата
+						li
+							a(href="") Статьи
+						li
+							a(href="") Отзывы
+					ul.contact
+						li
+							p office@babyplus.od.ua
+						li
+							p (050) 222-50-15
+						li
+							p (093) 27-50-600 
+						li
+							p (096) 80-60-500
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

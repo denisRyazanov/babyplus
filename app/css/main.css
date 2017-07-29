@@ -11,8 +11,22 @@ html {
     font-size: 1.6rem; }
 
 .header {
-  padding: 20px 0;
+  padding-top: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); }
+  .header .headerTop {
+    padding-bottom: 2rem; }
+  .header .headerBottom {
+    text-align: center;
+    background: #ababab;
+    color: #fff; }
+    .header .headerBottom ul {
+      display: flex;
+      justify-content: flex-start; }
+      .header .headerBottom ul li {
+        list-style: none;
+        text-align: center; }
+        .header .headerBottom ul li a {
+          color: #fff; }
   .header .logo {
     display: none;
     float: left; }
@@ -21,7 +35,7 @@ html {
     border: none;
     float: left;
     padding: 1rem 0;
-    margin-right: 2rem; }
+    margin: 0 2rem; }
   .header .search input {
     border: none;
     border-bottom: 1px solid #00ada5;
@@ -38,6 +52,7 @@ html {
   .header .cartLink {
     text-decoration: none;
     padding: 1rem .5rem;
+    margin-right: 2rem;
     border-radius: 50%;
     background-color: #ff6f00;
     color: #fff;
@@ -51,6 +66,9 @@ html {
   float: left; }
   .searchButton:hover {
     cursor: pointer; }
+
+.clear {
+  clear: both; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header .search {
@@ -88,10 +106,8 @@ html {
     margin-left: 150px; } }
 
 @media screen and (min-width: 1200px) {
-  .header .search {
-    margin-left: calc(100vw - 90%); }
-  .header .login {
-    margin-left: 150px; } }
+  .header .search input {
+    width: 520px; } }
 
 /* Slider ---------------------------------------------------------------
 --------------------------------------------------*/
