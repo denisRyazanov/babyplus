@@ -13,7 +13,21 @@ html {
 	}
 }
 
-
+.main {
+	max-width: 1140px;
+	margin: auto;
+	.mainTitle {
+		margin-top: 4rem;
+		text-align: center;
+		color: #666;
+		.border {
+			max-width: 1400px;
+			height: 50px;
+			border-bottom: 1px dotted #6c6c6c;
+			border-radius: 50%;
+		}
+	}
+}
 @import "parts/header";
 /* Slider ---------------------------------------------------------------
 --------------------------------------------------*/

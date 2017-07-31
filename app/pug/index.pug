@@ -17,10 +17,10 @@ html
 						input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
 					.searchButton
 						+ image("search.png", "search")
-					a(href="").login Войти
 					a.cartLink(href="")
 						+ image("cartTotal.png", "cart")
 						span 2
+					a(href="").login Войти
 				.clear
 				.headerBottom
 					ul.menu
@@ -41,6 +41,11 @@ html
 							p (093) 27-50-600 
 						li
 							p (096) 80-60-500
+			main.main
+				.mainTitle
+					h1 Настольная игра Футбольная монополия
+					+ image("sale.png", "sale")
+					.border
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

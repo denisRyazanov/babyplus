@@ -1,11 +1,6 @@
 .header {
-	padding-top: 20px;
 	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-	.headerTop{
-		padding-bottom: 2rem;
-	}
 	.headerBottom {
-		text-align: center;
 		background: #ababab;
 		color: #fff;
 		ul {
@@ -19,6 +14,20 @@
 				}
 			}
 		}
+		.menu {
+			li {
+				padding: .6rem;
+				border-right: 1px dotted #eaeaea;
+				&:nth-child(4) {
+					margin-right: 0;
+				}
+			}
+			
+		}
+		.contact {
+			font-size: 1.2rem;
+			display: none;
+		}
 	}
 	.logo {
 		display: none;
@@ -28,8 +37,7 @@
 		background: #fff;
 		border: none;
 		float: left;
-		padding: 1rem 0;
-		margin: 0 2rem;
+		margin: 2rem 2rem;
 	}
 	.search {
 		input {
@@ -40,22 +48,25 @@
 		}
 	}
 	.login {
+		float: right;
 		color: #00ada5;
 		display: inline-block;
-		padding-top: 15px;
-		margin-left: calc(100vw/4);
-		margin-right: 0;
+		margin: 2.5rem 0;
 		text-transform: uppercase;
-		font:bold 1.6rem RobotoRegular;
+		font: bold 1.6rem RobotoRegular;
 	}
 	.cartLink {
+		box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 		text-decoration: none;
 		padding: 1rem .5rem;
-		margin-right: 2rem;
+		margin: 1rem 2rem;
 		border-radius: 50%;
 		background-color: #ff6f00;
 		color: #fff;
 		float: right;
+		&:hover {
+			background-color: #fd903c;
+		}
 		img {
 			margin-right: .5rem;
 		}
@@ -63,7 +74,7 @@
 }
 
 .searchButton {
-	padding: 1rem 0;
+	margin-top: 2rem;
 	display: block;
 	float: left;
 	&:hover {
@@ -76,64 +87,91 @@
 
 
 @media screen and (min-width:320px) and (max-width:768px) {
-.header {	
-	.search {
-		position: absolute;
-		top: 10rem;
-		left: -250px;
-		z-index: 3;
-		transition: left 1s;
+	.header {
+		.headerTop {
+			.search {
+				position: absolute;
+				top: 12rem;
+				left: -250px;
+				z-index: 3;
+				transition: left 1s;
+			}
+			.active {
+				left: calc((100vw - 250px)/2);
+			}
+		.headerBottom {
+			.menu {
+				margin-right: 2rem;
+			}
+		}
+
+		}
 	}
-	.active {
-		left: calc((100vw - 250px)/2);
-	}
-}
 }
 
 @media screen and (min-width:768px) {
-	.header{ 
-		.logo {
-			display: block;
+	.header {
+		.headerTop{ 
+			.logo {
+				display: block;
+			}
+			.search {
+				margin: 30px 0 0 10px;
+				position: static;
+				float: left;
+			}
+			.searchButton {
+				margin-top: 2.5rem;
+			}
+			.login {
+				padding-top: 1rem;
+			}
+			.cartLink {
+				margin-top: 22px;
+			}
 		}
-		.search {
-			margin: 30px 0 0 10px;
-			position: static;
-			float: left;
-		}
-		.searchButton {
-			margin-top: 20px;
-			display: inline-block;
-			float: left;
-		}
-		.login {
-			padding-top: 35px;
-			margin-left: 20px;
-		}
-		.cartLink {
-			margin-top: 22px;
-		}
-		.menuButton {
-			padding: 2rem;
+		.headerBottom {
+			.menu {
+				float: left;
+				margin-right: 3rem;
+			}
+			.contact {
+				display: flex;
+				padding: 1rem 0;
+				li {
+					padding: 0 .5rem;
+					p {
+						color: #fff;
+					}
+				}
+			}
 		}
 	}
-	
 }
 @media screen and (min-width:1024px) {
 	.header{
-		.search {
-			margin-left: calc(100vw - 90%);
+		.headerTop {
+			.search {
+				margin-left: calc((100vw/2) - 450px);
+			}
 		}
-		.login {
-			margin-left: 150px;
+		.headerBottom {
+			.menu {
+				margin-right: calc(100vw - 850px);
+				li {
+					padding: .6rem 2rem;;
+				}
+			}
 		}
-		
 	}
 }
 @media screen and (min-width:1200px) {
 	.header{
-		.search {
-			input {
-				width: 520px;
+		.headerTop {
+			.search {
+				input {
+					width: 520px;
+				}
 			}
 		}
 	}
