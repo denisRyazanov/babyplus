@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Pattaya;
+  src: url(../fonts/Pattaya.ttf); }
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -6,9 +10,16 @@
 
 html {
   font-size: 62.5%; }
-  html .wrapper {
-    font-family: "Titillium Web";
-    font-size: 1.6rem; }
+
+body .wrapper {
+  font-size: 1.6rem;
+  font-family: 'Roboto'; }
+  body .wrapper .sprite {
+    background-image: url(../assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block; }
+  body .wrapper li {
+    list-style: none; }
 
 .main {
   max-width: 1140px;
@@ -17,11 +28,37 @@ html {
     margin-top: 4rem;
     text-align: center;
     color: #666; }
+    .main .mainTitle h1 {
+      font: 6rem Pattaya;
+      margin-bottom: 0; }
     .main .mainTitle .border {
       max-width: 1400px;
-      height: 50px;
+      height: 30px;
       border-bottom: 1px dotted #6c6c6c;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-bottom: 2rem; }
+  .main .mainBody .breadCrumbs {
+    display: flex; }
+    .main .mainBody .breadCrumbs li a {
+      padding: .5rem;
+      color: #00ada5; }
+    .main .mainBody .breadCrumbs li:last-child {
+      padding-left: .5rem; }
+  .main .mainBody .socialIcon {
+    display: flex;
+    float: right; }
+    .main .mainBody .socialIcon .sprite-fb {
+      width: 31px;
+      height: 31px;
+      background-position: -10px -150px; }
+    .main .mainBody .socialIcon .sprite-twitter {
+      width: 31px;
+      height: 31px;
+      background-position: -10px -338px; }
+    .main .mainBody .socialIcon .sprite-vk {
+      width: 31px;
+      height: 31px;
+      background-position: -10px -389px; }
 
 .header {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); }
@@ -32,7 +69,6 @@ html {
       display: flex;
       justify-content: flex-start; }
       .header .headerBottom ul li {
-        list-style: none;
         text-align: center; }
         .header .headerBottom ul li a {
           color: #fff; }
@@ -47,9 +83,10 @@ html {
   .header .logo {
     display: none;
     float: left; }
-  .header .menuButton {
-    background: #fff;
-    border: none;
+  .header .sprite-menuButton {
+    width: 26px;
+    height: 24px;
+    background-position: -10px -201px;
     float: left;
     margin: 2rem 2rem; }
   .header .search input {
@@ -84,6 +121,10 @@ html {
   float: left; }
   .searchButton:hover {
     cursor: pointer; }
+  .searchButton .sprite-search {
+    width: 27px;
+    height: 27px;
+    background-position: -10px -245px; }
 
 .clear {
   clear: both; }

@@ -7,7 +7,6 @@
 			display: flex;
 			justify-content: flex-start;
 			li {
-				list-style: none;
 				text-align: center;
 				a {
 					color: #fff;
@@ -33,9 +32,10 @@
 		display: none;
 		float: left;
 	}
-	.menuButton {
-		background: #fff;
-		border: none;
+	.sprite-menuButton {
+		width: 26px;
+		height: 24px;
+		background-position: -10px -201px;
 		float: left;
 		margin: 2rem 2rem;
 	}
@@ -79,6 +79,11 @@
 	float: left;
 	&:hover {
 		cursor: pointer;
+	}
+	.sprite-search {
+		width: 27px;
+		height: 27px;
+		background-position: -10px -245px;
 	}
 }
 .clear {

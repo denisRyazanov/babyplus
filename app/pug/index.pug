@@ -9,14 +9,14 @@ html
 		.wrapper
 			header.header
 				.headerTop
-					button(type="button").menuButton
+					i.sprite.sprite-menuButton
 						+ image("menuButton.png", "menuButton")
 					.logo
 						+ image("logo.png", "logo")
 					form.search
 						input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
 					.searchButton
-						+ image("search.png", "search")
+						i.sprite.sprite-search
 					a.cartLink(href="")
 						+ image("cartTotal.png", "cart")
 						span 2
@@ -43,11 +43,38 @@ html
 							p (096) 80-60-500
 			main.main
 				.mainTitle
-					h1 Настольная игра Футбольная монополия
+					h1 
+						| Настольная игра
+						br 
+						| Футбольная монополия
 					+ image("sale.png", "sale")
 					.border
+				.mainBody
+					.row
+						ul.breadCrumbs.col-sm-8
+							li
+								a(href="") babyplus.ua
+								span -
+							li
+								a(href="") Игрушки
+								span -
+							li Настольная игра Футбольная монополия
+						.social.col-sm-4
+							p Поделиться с друзьями:
+							ul.socialIcon
+								i.sprite.sprite-fb
+								i.sprite.sprite-twitter
+								i.sprite.sprite-vk
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")
-
+//<i class="sprite sprite-basket"></i>
+//<i class="sprite sprite-cartTotal"></i>
+//<i class="sprite sprite-clothes"></i>
+//<i class="sprite sprite-fb"></i>
+//<i class="sprite sprite-menuButton"></i>
+//<i class="sprite sprite-search"></i>
+//<i class="sprite sprite-toysIcon"></i>
+//<i class="sprite sprite-twitter"></i>
+//<i class="sprite sprite-vk"></i>
 		
