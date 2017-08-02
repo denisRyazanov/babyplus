@@ -76,6 +76,9 @@ body .wrapper {
       background-position: -10px -389px; }
   .main .mainBody .sliderBlock {
     box-shadow: 0px 38px 30px -23px #6c6c6c; }
+    .main .mainBody .sliderBlock img {
+      display: block;
+      width: 100%; }
 
 @media screen and (min-width: 768px) {
   .main .mainTitle img {
