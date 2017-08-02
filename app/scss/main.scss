@@ -32,15 +32,20 @@ body {
 	max-width: 1140px;
 	margin: auto;
 	.mainTitle {
+		position: relative;
 		margin-top: 4rem;
 		text-align: center;
 		color: #666;
 		h1 {
+//			position: relative;
 			font: 6rem Pattaya;
-			margin-bottom: 0;
+			margin: 0;
 		}
 		img {
-			
+			display: block;
+			position: absolute;
+			left: 75%;
+			bottom: 55%;
 		}
 		.border {
 			max-width: 1400px;
@@ -53,34 +58,60 @@ body {
 	.mainBody {
 		.breadCrumbs {
 			display: flex;
+			font-size: 1.2rem;
+			padding-top: 1rem;
 			li {
 				a {
 					padding: .5rem;
 					color: #00ada5;
 				}
 				&:last-child {
-					padding-left: .5rem;	
+					padding-left: .5rem;
+					color: #ccc;
 				}
 			}
 		}
-		.socialIcon {
-			display: flex;
-			float: right;
-			.sprite-fb {
-				width: 31px;
-				height: 31px;
-				background-position: -10px -150px;
+		.social {
+			p {
+				padding-top: 1rem;
+				font-size: 1.2rem;
+				color: #666;
 			}
+			.socialIcon {
+				display: flex;
+				float: right;
+				.sprite-fb {
+					margin-right: 1rem;
+					width: 31px;
+					height: 31px;
+					background-position: -10px -150px;
+				}
+				.sprite-twitter {
+					margin-right: 1rem;
+					width: 31px;
+					height: 31px;
+					background-position: -10px -338px;
+				}
+				.sprite-vk {
+					width: 31px;
+					height: 31px;
+					background-position: -10px -389px;
+				}
+			}
+		}
+		.sliderBlock {
+			box-shadow: 0px 38px 30px -23px #6c6c6c;
+		}
+	}
+}
 
-			.sprite-twitter {
-				width: 31px;
-				height: 31px;
-				background-position: -10px -338px;
-			}
-			.sprite-vk {
-				width: 31px;
-				height: 31px;
-				background-position: -10px -389px;
+
+@media screen and (min-width:768px) {
+	.main {
+		.mainTitle {
+			img {
+				left: 85%;
+				bottom: 55%;
 			}
 		}
 	}

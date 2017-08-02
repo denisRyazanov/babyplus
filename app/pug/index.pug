@@ -18,7 +18,7 @@ html
 					.searchButton
 						i.sprite.sprite-search
 					a.cartLink(href="")
-						+ image("cartTotal.png", "cart")
+						i.sprite.sprite-cartTotal
 						span 2
 					a(href="").login Войти
 				.clear
@@ -41,13 +41,14 @@ html
 							p (093) 27-50-600 
 						li
 							p (096) 80-60-500
-			main.main
+			main.main.container-fluid
 				.mainTitle
-					h1 
-						| Настольная игра
-						br 
-						| Футбольная монополия
-					+ image("sale.png", "sale")
+					.row
+						h1 
+							| Настольная игра
+							br 
+							| Футбольная монополия
+						+ image("sale.png", "sale")
 					.border
 				.mainBody
 					.row
@@ -60,11 +61,20 @@ html
 								span -
 							li Настольная игра Футбольная монополия
 						.social.col-sm-4
-							p Поделиться с друзьями:
-							ul.socialIcon
-								i.sprite.sprite-fb
-								i.sprite.sprite-twitter
-								i.sprite.sprite-vk
+							.row
+								p.col-xs-6 Поделиться с друзьями:
+								ul.socialIcon.col-xs-6
+									i.sprite.sprite-fb
+									i.sprite.sprite-twitter
+									i.sprite.sprite-vk
+					.row
+						.single-item.col-sm-8.sliderBlock
+							div 
+								+ image("monopol.jpg", "monopol")
+							div 
+								+ image("monopol.jpg", "monopol")
+							div 
+								+ image("monopol.jpg", "monopol")
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

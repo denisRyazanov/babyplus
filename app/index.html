@@ -6,7 +6,6 @@
     <title>babyplus</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600">
     <link rel="stylesheet" href="css/slick.css">
   </head>
   <body>
@@ -18,7 +17,7 @@
           <form class="search">
             <input class="searchInput" type="text" placeholder="Поиск среди более 3300 товаров">
           </form>
-          <div class="searchButton"><i class="sprite sprite-search"></i></div><a class="cartLink" href=""><img src="assets/img/cartTotal.png" alt="cart"><span>2</span></a><a class="login" href="">Войти</a>
+          <div class="searchButton"><i class="sprite sprite-search"></i></div><a class="cartLink" href=""><i class="sprite sprite-cartTotal"></i><span>2</span></a><a class="login" href="">Войти</a>
         </div>
         <div class="clear"></div>
         <div class="headerBottom">
@@ -44,10 +43,12 @@
           </ul>
         </div>
       </header>
-      <main class="main">
+      <main class="main container-fluid">
         <div class="mainTitle">
-          <h1>
-             Настольная игра<br>Футбольная монополия</h1><img src="assets/img/sale.png" alt="sale">
+          <div class="row">
+            <h1>
+               Настольная игра<br>Футбольная монополия</h1><img src="assets/img/sale.png" alt="sale">
+          </div>
           <div class="border"></div>
         </div>
         <div class="mainBody">
@@ -58,8 +59,20 @@
               <li>Настольная игра Футбольная монополия</li>
             </ul>
             <div class="social col-sm-4">
-              <p>Поделиться с друзьями:</p>
-              <ul class="socialIcon"><i class="sprite sprite-fb"></i><i class="sprite sprite-twitter"></i><i class="sprite sprite-vk"></i></ul>
+              <div class="row">
+                <p class="col-xs-6">Поделиться с друзьями:</p>
+                <ul class="socialIcon col-xs-6"><i class="sprite sprite-fb"></i><i class="sprite sprite-twitter"></i><i class="sprite sprite-vk"></i></ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="single-item col-sm-8 sliderBlock">
+              <div> <img src="assets/img/monopol.jpg" alt="monopol">
+              </div>
+              <div> <img src="assets/img/monopol.jpg" alt="monopol">
+              </div>
+              <div> <img src="assets/img/monopol.jpg" alt="monopol">
+              </div>
             </div>
           </div>
         </div>

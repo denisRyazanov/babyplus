@@ -25,12 +25,18 @@ body .wrapper {
   max-width: 1140px;
   margin: auto; }
   .main .mainTitle {
+    position: relative;
     margin-top: 4rem;
     text-align: center;
     color: #666; }
     .main .mainTitle h1 {
       font: 6rem Pattaya;
-      margin-bottom: 0; }
+      margin: 0; }
+    .main .mainTitle img {
+      display: block;
+      position: absolute;
+      left: 75%;
+      bottom: 55%; }
     .main .mainTitle .border {
       max-width: 1400px;
       height: 30px;
@@ -38,27 +44,43 @@ body .wrapper {
       border-radius: 50%;
       margin-bottom: 2rem; }
   .main .mainBody .breadCrumbs {
-    display: flex; }
+    display: flex;
+    font-size: 1.2rem;
+    padding-top: 1rem; }
     .main .mainBody .breadCrumbs li a {
       padding: .5rem;
       color: #00ada5; }
     .main .mainBody .breadCrumbs li:last-child {
-      padding-left: .5rem; }
-  .main .mainBody .socialIcon {
+      padding-left: .5rem;
+      color: #ccc; }
+  .main .mainBody .social p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #666; }
+  .main .mainBody .social .socialIcon {
     display: flex;
     float: right; }
-    .main .mainBody .socialIcon .sprite-fb {
+    .main .mainBody .social .socialIcon .sprite-fb {
+      margin-right: 1rem;
       width: 31px;
       height: 31px;
       background-position: -10px -150px; }
-    .main .mainBody .socialIcon .sprite-twitter {
+    .main .mainBody .social .socialIcon .sprite-twitter {
+      margin-right: 1rem;
       width: 31px;
       height: 31px;
       background-position: -10px -338px; }
-    .main .mainBody .socialIcon .sprite-vk {
+    .main .mainBody .social .socialIcon .sprite-vk {
       width: 31px;
       height: 31px;
       background-position: -10px -389px; }
+  .main .mainBody .sliderBlock {
+    box-shadow: 0px 38px 30px -23px #6c6c6c; }
+
+@media screen and (min-width: 768px) {
+  .main .mainTitle img {
+    left: 85%;
+    bottom: 55%; } }
 
 .header {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); }
@@ -100,7 +122,7 @@ body .wrapper {
     display: inline-block;
     margin: 2.5rem 0;
     text-transform: uppercase;
-    font: bold 1.6rem RobotoRegular; }
+    font-weight: bold; }
   .header .cartLink {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -112,8 +134,12 @@ body .wrapper {
     float: right; }
     .header .cartLink:hover {
       background-color: #fd903c; }
-    .header .cartLink img {
-      margin-right: .5rem; }
+    .header .cartLink .sprite-cartTotal {
+      margin-right: .7rem;
+      display: inline-block;
+      width: 21px;
+      height: 20px;
+      background-position: -10px -60px; }
 
 .searchButton {
   margin-top: 2rem;
