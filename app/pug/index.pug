@@ -68,13 +68,46 @@ html
 									i.sprite.sprite-twitter
 									i.sprite.sprite-vk
 					.row
-						.single-item.col-sm-8.sliderBlock
+						.one-time.col-sm-8.sliderBlock
 							div 
 								+ image("monopol.jpg", "monopol")
 							div 
 								+ image("monopol.jpg", "monopol")
 							div 
 								+ image("monopol.jpg", "monopol")
+							div 
+								+ image("monopol.jpg", "monopol")
+							div 
+								+ image("monopol.jpg", "monopol")
+							div 
+								+ image("monopol.jpg", "monopol")
+						.description.col-sm-4
+							p.art Артикул MAD-IGRAMONOFUDB
+							p.number Заводской номер 
+								span Max Group MG038
+							.size
+								p Длина ............. 
+									span 41.0 см
+								p Ширина ............ 
+									span 27.0 см
+								p Высота ............ 
+									span 5.0 см
+								p 
+									| Кол-во штук в
+									br 
+									| коробке ..........  
+									span 10
+							.row
+								.price.col-sm-6
+									p.oldPrice 769
+									p.newPrice 569
+								.number.col-sm-6
+									p Количество
+									span.minus
+										+ image("minus.png", "minus")
+									input(type='text', value='1', size='5')
+									span.plus
+										+ image("plus.png", "plus")
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")
