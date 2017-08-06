@@ -7,107 +7,28 @@ html
 	include includes/head.pug
 	body
 		.wrapper
-			header.header
-				.headerTop
-					i.sprite.sprite-menuButton
-						+ image("menuButton.png", "menuButton")
-					.logo
-						+ image("logo.png", "logo")
-					form.search
-						input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
-					.searchButton
-						i.sprite.sprite-search
-					a.cartLink(href="")
-						i.sprite.sprite-cartTotal
-						span 2
-					a(href="").login Войти
-				.clear
-				.headerBottom
-					ul.menu
-						li
-							a(href="") О нас
-						li
-							a(href="") Доставка и оплата
-						li
-							a(href="") Статьи
-						li
-							a(href="") Отзывы
-					ul.contact
-						li
-							p office@babyplus.od.ua
-						li
-							p (050) 222-50-15
-						li
-							p (093) 27-50-600 
-						li
-							p (096) 80-60-500
-			main.main.container-fluid
-				.mainTitle
-					.row
-						h1 
-							| Настольная игра
-							br 
-							| Футбольная монополия
-						+ image("sale.png", "sale")
-					.border
-				.mainBody
-					.row
-						ul.breadCrumbs.col-sm-8
-							li
-								a(href="") babyplus.ua
-								span -
-							li
-								a(href="") Игрушки
-								span -
-							li Настольная игра Футбольная монополия
-						.social.col-sm-4
-							.row
-								p.col-xs-6 Поделиться с друзьями:
-								ul.socialIcon.col-xs-6
-									i.sprite.sprite-fb
-									i.sprite.sprite-twitter
-									i.sprite.sprite-vk
-					.row
-						.one-time.col-sm-8.sliderBlock
-							div 
-								+ image("monopol.jpg", "monopol")
-							div 
-								+ image("monopol.jpg", "monopol")
-							div 
-								+ image("monopol.jpg", "monopol")
-							div 
-								+ image("monopol.jpg", "monopol")
-							div 
-								+ image("monopol.jpg", "monopol")
-							div 
-								+ image("monopol.jpg", "monopol")
-						.description.col-sm-4
-							p.art Артикул MAD-IGRAMONOFUDB
-							p.number Заводской номер 
-								span Max Group MG038
-							.size
-								p Длина ............. 
-									span 41.0 см
-								p Ширина ............ 
-									span 27.0 см
-								p Высота ............ 
-									span 5.0 см
-								p 
-									| Кол-во штук в
-									br 
-									| коробке ..........  
-									span 10
-							.row
-								.price.col-sm-6
-									p.oldPrice 769
-									p.newPrice 569
-								.number.col-sm-6
-									p Количество
-									span.minus
-										+ image("minus.png", "minus")
-									input(type='text', value='1', size='5')
-									span.plus
-										+ image("plus.png", "plus")
+			include includes/header.pug
+			include includes/main.pug
+			.reviews.container
+				.containerRev
+						section.sectionRev.col-sm-8
+							h3 Коментарии 
+								span (17)
+							article
+								h4 Юлия
+								p
+							article
+								h4 Анна
+								p
+							article 
+								h4 Lena
+								p
+							article
+								h4 Яна
+								p
+							article
+								h4 Алексей
+								p
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

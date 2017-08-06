@@ -36,7 +36,6 @@ body {
 		text-align: center;
 		color: #666;
 		h1 {
-//			position: relative;
 			font: 6rem Pattaya;
 			margin: 0;
 		}
@@ -54,86 +53,90 @@ body {
 			margin-bottom: 1rem;
 		}
 	}
-	.mainBody {
-		.breadCrumbs {
-			display: flex;
-			font-size: 1.2rem;
+}
+.mainBody {
+	.breadCrumbs {
+		display: flex;
+		font-size: 1.2rem;
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+		li {
+			a {
+				padding: .5rem;
+				color: #00ada5;
+			}
+			&:last-child {
+				padding-left: .5rem;
+				color: #ccc;
+			}
+		}
+	}
+	.social {
+		margin-bottom: 4rem;
+		p {
 			padding-top: 1rem;
-			margin-bottom: 4rem;
-			li {
-				a {
-					padding: .5rem;
-					color: #00ada5;
-				}
-				&:last-child {
-					padding-left: .5rem;
-					color: #ccc;
-				}
+			font-size: 1.2rem;
+			color: #666;
+		}
+		.socialIcon {
+			display: flex;
+			float: right;
+			.sprite-fb {
+				margin-right: 1rem;
+				width: 31px;
+				height: 31px;
+				background-position: -10px -150px;
+			}
+			.sprite-twitter {
+				margin-right: 1rem;
+				width: 31px;
+				height: 31px;
+				background-position: -10px -338px;
+			}
+			.sprite-vk {
+				width: 31px;
+				height: 31px;
+				background-position: -10px -389px;
 			}
 		}
-		.social {
-			margin-bottom: 4rem;
-			p {
-				padding-top: 1rem;
-				font-size: 1.2rem;
-				color: #666;
+	}
+	.description {
+		margin-bottom: 2rem;
+		.art {
+			padding: 10px;
+			background-color: #ababab;
+			color: #fff;
+			width: 200px;
+			border-radius: 0 20px 20px 20px;
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+		}
+		.number {
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+			span {
+				font-weight: bold;
+
 			}
-			.socialIcon {
-				display: flex;
+		}
+		.size {
+			padding: 2rem 0 4rem 0;
+			color: #ababab;
+			font-size: 1.6rem;
+			border-top: 1px dotted #ababab;
+			border-bottom: 1px dotted #ababab;
+			margin-bottom: 2rem;
+			p:nth-of-type(3) {
+				margin-bottom: 4.5rem;
+			}
+			span {
+				color: black;
+				font-weight: bold;
 				float: right;
-				.sprite-fb {
-					margin-right: 1rem;
-					width: 31px;
-					height: 31px;
-					background-position: -10px -150px;
-				}
-				.sprite-twitter {
-					margin-right: 1rem;
-					width: 31px;
-					height: 31px;
-					background-position: -10px -338px;
-				}
-				.sprite-vk {
-					width: 31px;
-					height: 31px;
-					background-position: -10px -389px;
-				}
 			}
 		}
-		.description {
-			.art {
-				padding: 10px;
-				background-color: #ababab;
-				color: #fff;
-				width: 200px;
-				border-radius: 0 20px 20px 20px;
-				font-size: 1.2rem;
-				margin-bottom: 1rem;
-			}
-			.number {
-				font-size: 1.2rem;
-				margin-bottom: 2rem;
-				span {
-					font-weight: bold;
-					
-				}
-			}
-			.size {
-				padding: 3rem 0 6rem 0;
-				color: #ababab;
-				font-size: 1.6rem;
-				border-top: 1px dotted #ababab;
-				border-bottom: 1px dotted #ababab;
-				margin-bottom: 2rem;
-				p:nth-of-type(3) {
-					margin-bottom: 4.5rem;
-				}
-				span {
-					color: black;
-					font-weight: bold;
-					float: right;
-				}
-			}
+		.priceContainer {
+			border-bottom: 1px dotted #ababab;
 			.price {
 				margin-bottom: 2rem;
 				.oldPrice {
@@ -147,7 +150,8 @@ body {
 					color: #ff6c00;
 				}
 			}
-			.number {
+			.count {
+				margin-bottom: 2.5rem;
 				p {
 					color: #ababab;
 					margin-bottom: 1rem;
@@ -168,18 +172,58 @@ body {
 				}
 			}
 		}
-		.sliderBlock {
-			max-width: 750px;
-			max-height: 500px;
-			box-shadow: 0px 50px 45px -35px #6c6c6c;
-			margin-bottom: 8rem;
-			img {
-				display: block;
-				width: 100%;
+		.toCart {
+			margin-left: calc((100%/2) - 100px);
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			border: none;
+			border-radius: 30px;
+			width: 200px;
+			height: 60px;
+			background: linear-gradient(to top, #fc3f02, #ffb042);
+			.sprite-basket {
+				float: left;
+				margin-left: 2.5rem;
+				width: 31px;
+				height: 30px;
+				background-position: -10px -10px;
 			}
+			span {
+				color: #fff;
+				font: bold 2.4rem/2rem "Roboto";
+			}
+		}
+		.sumOrder {
+			border-radius: 1.5rem;
+			text-align: center;
+			background-color: #ffe2cc;
+			padding: 1rem;
+		}
+	}
+	.fullDescrip {
+		border-bottom: 1px dotted #ababab;
+		.titleDes {
+			margin-bottom: 2.5rem;
+		}
+		.firstDes {
+			margin-bottom: 4rem;
+		}
+		.secondDes {
+			margin-bottom: 8rem;
+		}
+	}
+	.sliderBlock {
+		max-width: 750px;
+		max-height: 500px;
+		box-shadow: 0px 50px 45px -35px #6c6c6c;
+		margin-bottom: 8rem;
+		img {
+			display: block;
+			width: 100%;
 		}
 	}
 }
+
 /* -----------------------------------------------------------------------SLIDER--------------------------------------------------------*/
 .one-time .slick-arrow {
 	height: 40px;
@@ -205,11 +249,14 @@ body {
 	bottom: 50%;
 }
 
-.slick-dots  {
+.slick-dots {
 	position: relative;
 	top: 50px;
 	display: flex;
 	justify-content: center;
+	li{
+		margin-right: 1rem;
+	}
 }
 
 #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04, #slick-slide05 {
@@ -219,12 +266,6 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 50%;
 }
-
-.slick-dots {
-	li{
-		margin-right: 1rem;
-	}
-} 
 
 #slick-slide00:hover, #slick-slide01:hover, #slick-slide02:hover, #slick-slide03:hover, #slick-slide04:hover, #slick-slide05:hover {
 	border-color: #000;
@@ -309,8 +350,6 @@ body {
 //    background-position: -10px -389px;
 //}
 
-/* Slider ---------------------------------------------------------------
---------------------------------------------------*/
 //.one-time {
 //	width: 100vw;
 //	height: 100vh;

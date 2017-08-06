@@ -1,0 +1,33 @@
+header.header
+	.headerTop
+		i.sprite.sprite-menuButton
+		.logo
+			+ image("logo.png", "logo")
+		form.search
+			input(type="text", placeholder="Поиск среди более 3300 товаров").searchInput
+		.searchButton
+			i.sprite.sprite-search
+		a.cartLink(href="")
+			i.sprite.sprite-cartTotal
+			span 2
+		a(href="").login Войти
+	.clear
+	.headerBottom
+		ul.menu
+			li
+				a(href="") О нас
+			li
+				a(href="") Доставка и оплата
+			li
+				a(href="") Статьи
+			li
+				a(href="") Отзывы
+		ul.contact
+			li
+				p office@babyplus.od.ua
+			li
+				p (050) 222-50-15
+			li
+				p (093) 27-50-600 
+			li
+				p (096) 80-60-500
