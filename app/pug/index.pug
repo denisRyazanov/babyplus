@@ -9,26 +9,44 @@ html
 		.wrapper
 			include includes/header.pug
 			include includes/main.pug
-			.reviews.container
-				.containerRev
-						section.sectionRev.col-sm-8
-							h3 Коментарии 
-								span (17)
-							article
-								h4 Юлия
-								p
-							article
-								h4 Анна
-								p
-							article 
-								h4 Lena
-								p
-							article
-								h4 Яна
-								p
-							article
-								h4 Алексей
-								p
+			include includes/reviews.pug
+			include includes/otherBuy.pug
+			.youWatched.container-fluid
+				.row
+					section.sectionWatch.col-xs-12
+						h3 Вы смотрели
+						.border
+						.row
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("tractor.jpg", "tractor")
+								h4 
+									a(href="") Экскаватор колесный на р/у
+								a(herf="") Игрушки
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("socks.jpg", "socks")
+								h4 
+									a(href="") Носочки мохровые
+								a(herf="") Одежда и обувь
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("bag.jpg", "bag")
+								h4 
+									a(href="") Сумка для пренадлежностей малыша
+								a(herf="") Одежда и обувь
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("socks.jpg", "socks")
+								h4 
+									a(href="") Носочки мохровые
+								a(herf="") Одежда и обувь
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("socks.jpg", "socks")
+								h4 
+									a(href="") Носочки мохровые
+								a(herf="") Одежда и обувь
+							article.col-md-2.col-sm-3.col-xs-6
+								+ image("socks.jpg", "socks")
+								h4 
+									a(href="") Носочки мохровые
+								a(herf="") Одежда и обувь
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

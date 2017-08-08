@@ -1,0 +1,84 @@
+.otherBuyContainer {
+	max-width: 1140px;
+	.sectionBuy {
+		padding-bottom: 3rem;
+		margin-bottom: 120px;
+		h3 {
+			font: 2.4rem Roboto-Bold;
+			margin-bottom: 2rem;
+		}
+		article {
+			box-shadow: 0 0 20px rgba(0,0,0,0.1);
+			height: 595px;
+			text-align: center;
+			padding-bottom: 3rem;
+			border-radius: 5px;
+			img {
+				margin-bottom: 3rem;
+			}
+			h4 {
+				font: 1.8rem Roboto-Bold;
+				margin-bottom: 1rem;
+				padding-left: 3rem;
+				padding-right: 3rem;
+				text-align: left;
+				a {
+					color: #00ada5;
+				}
+			}
+			i {
+				margin-left: 3rem;
+				margin-bottom: 2.5rem;
+				span {
+					a {
+						text-align: left;
+						display: inline-block;
+						width: 140px;
+						margin-left: 4rem;
+						font: 1.4rem Roboto-Medium;
+						color: #00ada5;
+					}
+				}
+			}
+			.decriptP {
+				text-align: left;
+				padding-left: 3rem;
+				padding-right: 3rem;
+				margin-bottom: 3rem;
+			}
+			.buttonP {
+				position: absolute;
+				bottom: 3rem;
+				left: 4rem;
+				span {
+					font: 1.8rem Roboto-Bold;
+					margin-right: -6rem;
+					padding: 1.2rem 12rem 1.2rem 1rem;
+					border: 1px solid #ffe2cc;
+					border-radius: 2.8rem;
+				}
+				.buttonBuy {
+					background: linear-gradient(to top, #fc3f02, #ffb042);
+					border: none;
+					border-radius: 25px;
+					vertical-align: middle;
+					
+					i {
+						margin: 1rem 2rem;
+					}
+				}	
+			}
+			
+		}
+	}
+	.sprite-toysIcon {
+		width: 25px;
+		height: 26px;
+		background-position: -10px -292px;
+	}
+	.sprite-basket {
+		width: 31px;
+		height: 30px;
+		background-position: -10px -10px;
+	}
+}
