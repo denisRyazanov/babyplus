@@ -11,42 +11,53 @@ html
 			include includes/main.pug
 			include includes/reviews.pug
 			include includes/otherBuy.pug
-			.youWatched.container-fluid
+			include includes/youWatched.pug
+			footer.footer.container-fluid
 				.row
-					section.sectionWatch.col-xs-12
-						h3 Вы смотрели
-						.border
-						.row
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("tractor.jpg", "tractor")
-								h4 
-									a(href="") Экскаватор колесный на р/у
-								a(herf="") Игрушки
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("socks.jpg", "socks")
-								h4 
-									a(href="") Носочки мохровые
-								a(herf="") Одежда и обувь
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("bag.jpg", "bag")
-								h4 
-									a(href="") Сумка для пренадлежностей малыша
-								a(herf="") Одежда и обувь
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("socks.jpg", "socks")
-								h4 
-									a(href="") Носочки мохровые
-								a(herf="") Одежда и обувь
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("socks.jpg", "socks")
-								h4 
-									a(href="") Носочки мохровые
-								a(herf="") Одежда и обувь
-							article.col-md-2.col-sm-3.col-xs-6
-								+ image("socks.jpg", "socks")
-								h4 
-									a(href="") Носочки мохровые
-								a(herf="") Одежда и обувь
+					.catalog.col-md-8
+						h5 КАТАЛОГ
+						ul
+							li
+								a(href="") Акции и новинки
+							li
+								a(href="") Игрушки
+							li
+								a(href="") Канцтовары
+							li
+								a(href="") Intex и Bestway
+							li
+								a(href="") Спортивные товары
+							li
+								a(href="") Одежда и обувь
+							li
+								a(href="") Для самых маленьких
+							li
+								a(href="") Деская мебель
+							li
+								a(href="") Детский транспорт
+							li
+								a(href="") Литература
+					.menu.col-md-2
+						h5 МЕНЮ
+						ul
+							li
+								a(href="") О нас
+							li
+								a(href="") Доставка и оплата
+							li
+								a(href="") Статьи
+							li
+								a(href="") Отзывы
+					.contacts.col-md-2
+						h5 КОНТАКТЫ
+						ul
+							li
+								a(href="") office@babyplus.od.ua
+							li +38 (096) 80-60-500, 
+							li +38 (050) 222-50-15, 
+							li +38 (093) 27-50-600
+							li icq: 166874724
+
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")

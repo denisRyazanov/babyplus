@@ -111,17 +111,19 @@ body .wrapper {
     padding: 2rem 0 4rem 0;
     color: #666;
     font-size: 1.6rem;
-    border-top: 1px dotted #e5e5e5;
-    border-bottom: 1px dotted #e5e5e5;
+    border-top: 2px dotted #e5e5e5;
+    border-bottom: 2px dotted #e5e5e5;
     margin-bottom: 2rem; }
-    .mainBody .description .size p:nth-of-type(3) {
-      margin-bottom: 4.5rem; }
+    .mainBody .description .size p {
+      padding: 1rem 0; }
+      .mainBody .description .size p:nth-of-type(3) {
+        margin-bottom: 4.5rem; }
     .mainBody .description .size span {
       color: black;
       font-weight: bold;
       float: right; }
   .mainBody .description .priceContainer {
-    border-bottom: 1px dotted #ababab; }
+    border-bottom: 2px dotted #e5e5e5; }
     .mainBody .description .priceContainer .price {
       margin-bottom: 2rem; }
       .mainBody .description .priceContainer .price .oldPrice {
@@ -241,6 +243,10 @@ body .wrapper {
   .main .mainTitle img {
     left: 85%;
     bottom: 55%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainBody .description .priceContainer .count input {
+    width: 40px; } }
 
 .header {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); }
@@ -449,7 +455,8 @@ body .wrapper {
       height: 595px;
       text-align: center;
       padding-bottom: 3rem;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin-bottom: 2rem; }
       .otherBuyContainer .sectionBuy article img {
         margin-bottom: 3rem; }
       .otherBuyContainer .sectionBuy article h4 {
@@ -502,21 +509,35 @@ body .wrapper {
     background-position: -10px -10px; }
 
 .youWatched {
-  max-width: 1140px; }
+  max-width: 1140px;
+  margin-bottom: 175px; }
   .youWatched .sectionWatch h3 {
     font: 4.8rem/6rem Pattaya;
     color: #666;
     text-align: center; }
   .youWatched .sectionWatch .border {
     max-width: 1140px;
-    height: 30px;
+    height: 40px;
     border-bottom: 2px dotted #e5e5e5;
     border-radius: 50%;
     margin-bottom: 1rem; }
   .youWatched .sectionWatch article {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2rem; }
     .youWatched .sectionWatch article img {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 2rem; }
+    .youWatched .sectionWatch article h4 {
+      margin-bottom: 2rem;
+      text-align: left; }
+      .youWatched .sectionWatch article h4 a {
+        color: #00ada5;
+        font: 1.6rem Roboto-Bold; }
+    .youWatched .sectionWatch article a {
+      display: block;
+      color: #00ada5;
+      font: 1.4rem Roboto-Medium;
+      text-align: left; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sectionWatch article:nth-of-type(2n+3) {
@@ -525,3 +546,29 @@ body .wrapper {
 @media screen and (width: 768px) {
   .sectionWatch article:nth-of-type(4n+5) {
     clear: both; } }
+
+.footer {
+  max-width: 1140px;
+  padding-bottom: 3rem;
+  border-bottom: 2px dotted #e5e5e5; }
+  .footer h5 {
+    margin-bottom: 3rem; }
+  .footer ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start; }
+    .footer ul li {
+      margin: 0 2rem 2rem 0; }
+      .footer ul li a {
+        font: 1.6rem Roboto-Regular;
+        color: #00ada5; }
+  .footer .menu ul li {
+    margin-right: 0; }
+    .footer .menu ul li:nth-of-type(3) {
+      margin-right: 5rem; }
+  .footer .contacts ul li {
+    font: 1.4rem Roboto-Regulat; }
+    .footer .contacts ul li:nth-of-type(2) {
+      margin-bottom: 0; }
+    .footer .contacts ul li:nth-of-type(3) {
+      margin-bottom: 0; }
