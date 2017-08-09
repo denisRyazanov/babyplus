@@ -46,10 +46,18 @@ body {
 		position: relative;
 		margin-top: 4rem;
 		text-align: center;
-		color: #666;
+		
 		h1 {
 			font: 6rem Pattaya;
 			margin: 0;
+			a {
+				color: #666;
+				transition: all 1s;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 		img {
 			display: block;
@@ -319,7 +327,22 @@ body {
 			}
 		}
 	}
+	.mainBody {
+		.social {
+			p {
+			}
+			.socialIcon {
+				.sprite-fb {
+					margin-right: 0;
+				}
+				.sprite-twitter {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
+
 @import "parts/header";
 @import "parts/reviews";
 @import "parts/otherBuy";

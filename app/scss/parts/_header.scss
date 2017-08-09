@@ -1,5 +1,28 @@
 .header {
 	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+	.headerMenu {
+		.catalogUl {
+			position: absolute;
+			top: 6rem;
+			background: #fff;
+			opacity: .9;
+			left: -250px;
+			z-index: 5;
+			transition: left 1s;
+			li {
+				margin: 0 2rem 1rem 0;
+				padding-left: 3rem;
+				a {
+					font: 1.6rem Roboto-Regular;
+					color: #00ada5;
+				}
+			}
+		}
+		.activeMenu {
+			position: fixed;
+			left: 5%;
+		}
+	}
 	.headerBottom {
 		background: #ababab;
 		color: #fff;

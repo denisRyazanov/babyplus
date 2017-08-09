@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	$('.sprite-menuButton').click(function() {
+		$('.catalogUl').toggleClass('activeMenu');
+	});
 	$('.searchButton').click(function() {
 		$('.search').toggleClass('active');
 	});
@@ -9,6 +12,7 @@ $(document).ready(function() {
 	  slidesToShow: 1,
 	  adaptiveHeight: true
 	});
+	$('.mainTitle a').mPageScroll2id();
 });
 $(document).ready(function() {
 	$('.minus').click(function () {
